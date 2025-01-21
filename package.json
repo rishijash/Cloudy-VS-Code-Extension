@@ -2,11 +2,12 @@
   "name": "cloudy",
   "displayName": "cloudy",
   "description": "AI for your REST APIs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "Cloudy",
   "engines": {
     "vscode": "^1.96.0"
   },
+  "icon": "resources/logo.png",
   "categories": [
     "Other"
   ],
