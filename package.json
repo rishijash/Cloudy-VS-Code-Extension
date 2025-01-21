@@ -18,7 +18,7 @@
   "main": "./out/extension.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rishijash/cloudy-extension.git"
+    "url": "https://github.com/rishijash/Cloudy-VS-Code-Extension"
   },
   "contributes": {
     "commands": [
