@@ -3,6 +3,7 @@
   "displayName": "cloudy",
   "description": "AI for your REST APIs",
   "version": "0.0.1",
+  "publisher": "Cloudy",
   "engines": {
     "vscode": "^1.96.0"
   },
