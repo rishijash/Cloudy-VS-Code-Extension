@@ -1,8 +1,8 @@
 {
-  "name": "cloudy",
-  "displayName": "cloudy",
+  "name": "Cloudy",
+  "displayName": "Cloudy - AI for Your REST APIs",
   "description": "AI for your REST APIs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "Cloudy",
   "engines": {
     "vscode": "^1.96.0"
