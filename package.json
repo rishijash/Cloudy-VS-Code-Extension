@@ -1,0 +1,80 @@
+{
+  "name": "cloudy",
+  "displayName": "cloudy",
+  "description": "AI for your REST APIs",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+     "onCommand:cloudy.generateDummyRequest",
+     "onCommand:cloudy.saveVariable",
+     "onCommand:cloudy.removeVariable",
+     "onCommand:cloudy.listVariables"
+  ],
+  "main": "./out/extension.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rishijash/cloudy-extension.git"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "cloudy.generateDummyRequest",
+        "title": "Generate JSON with Dummy Data",
+        "category": "Cloudy"
+      },
+      {
+        "command": "cloudy.saveVariable",
+        "title": "Save Variable",
+        "category": "Cloudy"
+      },
+      {
+          "command": "cloudy.removeVariable",
+          "title": "Remove Variable",
+          "category": "Cloudy"
+      },
+      {
+          "command": "cloudy.listVariables",
+          "title": "List Variables",
+          "category": "Cloudy"
+      }
+    ],
+    "configuration": {
+      "title": "Cloudy Configuration",
+      "properties": {
+        "cloudy.openaiKey": {
+          "type": "string",
+          "default": "",
+          "description": "OpenAI API Key"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.96.0",
+    "@typescript-eslint/eslint-plugin": "^8.17.0",
+    "@typescript-eslint/parser": "^8.17.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "@vscode/vsce": "^3.2.1",
+    "eslint": "^9.16.0",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "openai": "^4.0.0"
+  }
+}
